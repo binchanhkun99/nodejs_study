@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
-const app = express()
-const port = 3000
+const app = express()//đối tượng này đại diện cho ứng dụng website của bạn
+const port = 3000//run web ở cổng ...
 const handlebars = require('express-handlebars')
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -11,7 +11,8 @@ app.engine('hbs', handlebars({
 }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources\\views'))
-app.get('/', (req, res) => {
+
+app.get('/', (req, res) => { // sử dụng => là arrow function
   res.render('home');
 })
 app.get('/news', (req, res) => {

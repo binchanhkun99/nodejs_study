@@ -1,3 +1,4 @@
 {
-    "ext": "js json scss"
+    "ext": "js json scss",
+    "comment": "để node_mon lắng nghe sự thay đổi của các tệp có những phần mở rộng là .js, .json, .scss"
 }

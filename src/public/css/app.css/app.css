@@ -2,6 +2,8 @@ h1 {
   color: red; }
 
 .class1 {
-  color: black; }
+  color: black;
+  align-items: center;
+  text-align: center; }
   .class1 .class2 {
     background-color: white; }
